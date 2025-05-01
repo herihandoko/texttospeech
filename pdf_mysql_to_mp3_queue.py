@@ -31,7 +31,7 @@ MP3_DIR.mkdir(parents=True, exist_ok=True)
 def get_pending(cursor):
     cursor.execute(
         "SELECT id, file_peraturan FROM produk_hukum_lists "
-        "WHERE conversion_status = 'pending' ORDER BY id ASC"
+        "WHERE conversion_status = 'pending' ORDER BY id ASC LIMIT 1"
     )
     return cursor.fetchall()
 

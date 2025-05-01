@@ -1,3 +1,5 @@
 pdf
 mp3
+.env.example
+
 *.bak
